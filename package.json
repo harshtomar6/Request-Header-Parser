@@ -1,0 +1,15 @@
+{
+  "name": "rhp",
+  "version": "1.0.0",
+  "description": "A simple request header parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harsh Tomar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "public-ip": "^2.3.3"
+  }
+}
