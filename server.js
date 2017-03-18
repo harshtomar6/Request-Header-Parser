@@ -1,17 +1,6 @@
 var express = require('express')
 var app = express()
 
-/*app.get('/', function(req, res){
-	var obj = {}
-	publicIP.v4().then(function(ip){
-		obj.ipaddress = ip
-		obj.language = req.headers['accept-language'].split(',')[0]
-		obj.software = os.type()+" "+os.release()+" "+os.arch();;
-
-		res.json(obj)
-	})
-})*/
-
 app.get('/', (req, res) => {
 	var ip = req.headers['x-forwarded-for'] || req.ip
 	var language = req.headers['accept-language'].split(',')[0]
